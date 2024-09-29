@@ -1,0 +1,57 @@
+.relativeContainer {
+  position: relative;
+  width: 100%;
+}
+
+.searchForm {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.searchForm > * {
+  margin: 0 8px; /* Espacio entre el input y el botón */
+}
+
+.formControl {
+  border-radius: 5px;
+  padding: 8px;
+  flex: 1; /* Permite que el input tome el máximo espacio disponible */
+  max-width: 300px; /* Ancho máximo del input */
+  margin-right: 8px; /* Espacio entre el input y el botón */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .searchForm {
+    flex-direction: column; /* Cambia la dirección del flex en pantallas pequeñas */
+  }
+
+  .formControl {
+    margin:  0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+  }
+
+  .btnBusqueda {
+    width: 40%; /* Hace que el botón ocupe el ancho completo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 428px) {
+  .relativeContainer {
+    position: relative;
+    width: 100%;
+  }
+
+  .formControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
+}

@@ -1,0 +1,39 @@
+.kitOfertas {
+  background-color: #BFDEC4;
+  width: 100%;
+  height: auto;
+  padding: 40px 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alingCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tituloOfertas{
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  text-decoration-line: none;
+  display: flex;
+  justify-content: center;
+  color: #0B513B;
+}
+
+.linkDecoration {
+  text-decoration: none;
+  color: inherit; /* Para heredar el color del texto circundante */
+}
+
+@media (max-width: 768px) {
+  .kitOfertas{
+    width: 100%;
+  }
+}

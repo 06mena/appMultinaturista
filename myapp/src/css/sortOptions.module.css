@@ -1,0 +1,42 @@
+/* SortOptions.module.css */
+.sortContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+.label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.select:hover {
+  border-color: #888;
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 480px) {
+  .sortContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .select{
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}

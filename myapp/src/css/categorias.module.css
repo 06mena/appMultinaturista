@@ -1,0 +1,76 @@
+.principalCategorias {
+  margin-top: 50px;
+}
+
+/* Centra el título en todas las pantallas */
+.tituloCategoria {
+  display: flex;
+  justify-content: center;
+  color: #0B513B;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Asegura que las categorías se reorganicen en pantallas pequeñas */
+  gap: 79px;
+  transform: scale(0.80);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .principalCategorias {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    /* Reduce el margen superior en pantallas pequeñas */
+  }
+
+  .tituloCategoria {
+    font-size: 1.5rem;
+    /* Reduce el tamaño del texto */
+  }
+
+  .categorias {
+    margin-top: 10px;
+    /* Reduce el margen superior en pantallas pequeñas */
+    gap: 10px;
+    /* Ajusta el espacio entre categorías */
+  }
+
+  .categorias img {
+    flex-basis: calc(50% - 70px);
+    /* Cada categoría ocupa el 50% del ancho del contenedor */
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 477px) and (max-width: 768px) {
+  .principalCategorias {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Ajuste intermedio */
+  }
+
+  .tituloCategoria {
+    font-size: 1.75rem;
+    /* Ajusta el tamaño del texto */
+  }
+
+  .categorias {
+    margin-top: 20px;
+    /* Ajuste intermedio */
+    gap: 40px;
+    /* Ajuste del espacio en pantallas medianas */
+  }
+
+  .categorias img {
+    flex-basis: calc(50% - 70px);
+    /* Cada categoría ocupa el 50% con un margen ajustado */
+  }
+}

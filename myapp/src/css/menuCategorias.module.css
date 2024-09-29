@@ -1,0 +1,100 @@
+/* menucategorias Contenedor principal */
+.containerCustom {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Menú de navegación */
+.navbarCustom {
+  /* flex-basis: 45%; Ancho del menú */
+  width: 259px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 8px;
+  position: sticky;
+  top: 100px;
+  height: auto;
+}
+
+/* Título Categorías */
+.titleCustom {
+  font-size: 1.5rem;
+  color: #0B513B;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Enlaces del menú */
+.navLinkCustom {
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navLinkCustom:hover {
+  background-color: #3a8b4d;
+  color: white;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .containerMenu{
+    width: 100%;
+  }
+
+  .containerCustom {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .navbarCustom {
+    flex-basis: 100%;
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .titleCustom {
+    text-align: center;
+  }
+
+  .navLinkCustom {
+    width: 100%;
+    text-align: start; /* Centra los enlaces en pantallas pequeñas */
+    padding: 10px 0;
+  }
+}
+
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 426px) {
+  .containerMenu{
+    width: 100%;
+  }
+
+  .containerCustom {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .navbarCustom {
+    flex-basis: 100%;
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .titleCustom {
+    text-align: center;
+  }
+
+  .navLinkCustom {
+    width: 100%;
+    text-align: start; /* Centra los enlaces en pantallas pequeñas */
+    padding: 10px 0;
+  }
+}

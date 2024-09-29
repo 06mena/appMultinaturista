@@ -1,0 +1,120 @@
+.dropdown {
+  position: absolute; /* Posiciona el dropdown fuera del flujo del documento */
+  top: 100%; /* Alinea el dropdown justo debajo del input */
+  left: 0;
+  width: 60%; /* Ajusta el ancho del dropdown al contenedor padre */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 250px; /* Altura máxima del dropdown */
+  overflow-y: auto; /* Añade scroll si el contenido es mayor que la altura */
+  padding: 8px 0; 
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.productImage {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.offerTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.noResults {
+  padding: 16px;
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 426px) {
+  .dropdown {
+    position: absolute; /* Posiciona el dropdown fuera del flujo del documento */
+    top: 100%; /* Alinea el dropdown justo debajo del input */
+    left: 0;
+    width: 100%; /* Ajusta el ancho del dropdown al contenedor padre */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 250px; /* Altura máxima del dropdown */
+    overflow-y: auto; /* Añade scroll si el contenido es mayor que la altura */
+    padding: 8px 0; 
+  }
+
+  .productImage {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width:769px) {
+  .dropdown {
+    position: absolute; /* Posiciona el dropdown fuera del flujo del documento */
+    top: 100%; /* Alinea el dropdown justo debajo del input */
+    left: 0;
+    width: 100%; /* Ajusta el ancho del dropdown al contenedor padre */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 250px; /* Altura máxima del dropdown */
+    overflow-y: auto; /* Añade scroll si el contenido es mayor que la altura */
+    padding: 8px 0; 
+  }
+}
+
+@media (max-width:1025px) {
+  .dropdown {
+    position: absolute; /* Posiciona el dropdown fuera del flujo del documento */
+    top: 100%; /* Alinea el dropdown justo debajo del input */
+    left: 0;
+    width: 100%; /* Ajusta el ancho del dropdown al contenedor padre */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 250px; /* Altura máxima del dropdown */
+    overflow-y: auto; /* Añade scroll si el contenido es mayor que la altura */
+    padding: 8px 0; 
+  }
+}

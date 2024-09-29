@@ -1,0 +1,32 @@
+
+.termsConditions {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.termsConditions h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.termsConditions h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.termsConditions p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .termsConditions h1 {
+      font-size: 20px;
+  }
+
+  .termsConditions h2 {
+      font-size: 18px;
+  }
+}

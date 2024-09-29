@@ -1,0 +1,116 @@
+.formContainer{
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    hsl(139deg 58% 21%) 0%,
+    hsl(140deg 61% 27%) 8%,
+    hsl(140deg 63% 33%) 17%,
+    hsl(141deg 65% 39%) 25%,
+    hsl(141deg 67% 45%) 33%,
+    hsl(141deg 71% 51%) 42%,
+    hsl(141deg 93% 57%) 50%,
+    hsl(143deg 89% 55%) 58%,
+    hsl(145deg 85% 53%) 67%,
+    hsl(147deg 82% 51%) 75%,
+    hsl(149deg 83% 49%) 83%,
+    hsl(150deg 87% 47%) 92%,
+    hsl(152deg 91% 45%) 100%
+  );
+}
+ 
+.formContainerDos{
+  width: 60%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  /* border-style: solid;
+  border-width: 1px; */
+  justify-content: center;
+  align-items: center;
+ 
+}
+ 
+.cajaDeLaCosa{
+  width: 90%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  /* border-radius: 20px;
+  border-style: solid;
+  border-width: 1px; */
+}
+ 
+.decoracion{
+  width: 50%;
+  height: 100%;
+  /* border-right-style: solid;
+  border-width: 1px; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ 
+.decoracion img{
+  width: 100%;
+  height: auto;
+  object-fit:contain;
+}
+ 
+.loginCaja{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+
+.tituloAcceder{
+  text-align: center;
+}
+ 
+.botonAcceso{
+  margin-top: 10px;
+}
+
+@media (max-width: 1441px) {
+  .decoracion{
+    width: 50%;
+    height: 100%;
+    /* border-right-style: solid;
+    border-width: 1px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .decoracion img{
+    width: 80%;
+    height: auto;
+    object-fit:contain;
+  }
+  
+}
+ 
+@media (max-width: 1134px) {
+  .decoracion{
+    display: none;
+  }
+  .loginCaja{
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+  }
+  .formContainerDos{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}

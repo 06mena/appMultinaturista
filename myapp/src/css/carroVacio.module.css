@@ -1,0 +1,34 @@
+/* Sección de carrito vacío */
+.carritoVacioContenedor {
+  display: flex;
+  flex-direction: row; /* Alinea en fila */
+  align-items: center; /* Centra verticalmente */
+  justify-content: flex-start; /* Alinea todo al inicio (a la izquierda) */
+  height: 84px; /* Ajusta según la altura que necesites */
+  text-align: center; /* Alineación del texto a la izquierda */
+  background-color: #f9f9f9;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 80%; /* Ajusta el ancho según el diseño */
+  margin-bottom: 170px;
+  margin-top: 100px;
+}
+
+.carritoEmpty {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-left: 30px; /* Espacio entre el ícono y el texto */
+}
+
+.carritoIcono {
+  max-width: 100px; /* Ajusta el tamaño del ícono */
+  height: auto;
+  margin-left: 40px;
+}
+
+@media (max-width:376px) {
+  .carritoEmpty{
+    font-size: 1.3rem;
+  }
+}

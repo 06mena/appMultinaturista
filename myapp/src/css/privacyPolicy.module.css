@@ -1,0 +1,31 @@
+.privacyPolicy {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.tituloPrivacy {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subtituloPrivacy {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.textoPrivacy {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .tituloPrivacy {
+      font-size: 20px;
+  }
+
+  .subtituloPrivacy {
+      font-size: 18px;
+  }
+}

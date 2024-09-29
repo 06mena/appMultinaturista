@@ -1,0 +1,211 @@
+.contenedorBarra{
+  width: 100%;
+}
+
+.barraSuperior {
+  background-color: #85CA83; 
+  padding: 6px 0;
+}
+
+.linkDecoracion{
+  text-decoration: none;
+  color: inherit;
+}
+.encabezado {
+  width: 100%;
+  background-color: white;
+  padding: 8px 0;
+  margin: 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+  margin-left: 25px;
+}
+
+.barraBusqueda {
+  max-width: 500px;
+  margin-left: 20%;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnBusqueda {
+  background-color: #0B513B;
+  margin-left: -35px;
+}
+
+.btnBusqueda:hover{
+  background-color: #034d2c;
+}
+
+.telefonos {
+  color: #d6a800; 
+  align-content: center;
+}
+
+.botonTelefono {
+  background-color: #d6a800; 
+  color: white;
+}
+
+.botonCarrito{
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+}
+
+.badge{
+  margin-top: 6px;
+  background-color: aqua;
+}
+
+.menuInferior {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  margin: 0 0;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.enlaceMenu {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+.enlaceMenu:hover {
+  color: #92d1a6; /* Cambiar color al pasar el cursor */
+}
+
+.relativeContainer {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 90%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 8px 0; 
+}
+
+.dropdownItem {
+  padding: 8px 12px; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  border-bottom: 1px solid #eee; 
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0; 
+}
+
+.dropdownLink {
+  display: flex; 
+  align-items: center; 
+  text-decoration: none; 
+  color: black; 
+}
+
+.productImage {
+  width: 50px; 
+  height: 50px; 
+  margin-right: 12px; 
+  object-fit: cover;
+  border-radius: 4px; 
+}
+
+.noResults {
+  padding: 16px;
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 150px;
+    margin-left: 15px;
+  }
+
+  .barraBusqueda {
+    margin-left: 5%;
+    max-width: 300px;
+  }
+
+  .botonCarrito {
+    width: 35px;
+    height: 35px;
+    margin-left: 30%;
+  }
+
+  .menuInferior {
+    font-size: 14px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  .contenedorBarra{
+    width: 100%;
+  }
+  
+  .barraSuperior {
+    width: 100%;
+    background-color: #85CA83; 
+    padding: 6px 0;
+  }
+  
+  .encabezado {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 10px;
+    max-width: 100px;
+  }
+
+  .barraBusqueda {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .botonCarrito {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menuInferior {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .enlaceMenu {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+}

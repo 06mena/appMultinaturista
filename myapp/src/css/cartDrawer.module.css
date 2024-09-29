@@ -1,0 +1,91 @@
+.btnPrimary{
+  width: 100%;
+  background-color: #85CA83;
+  color: white;
+}
+
+.btnPrimary:hover{
+  background-color: #4dc749 ;
+}
+
+.btnCarrito{
+  width: 100%;
+  border: 1px solid #85CA83;
+  color: black;
+}
+
+.btnCarrito:hover{
+  background-color: #d4f0d3;
+}
+
+.cancelIcon {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.nombreProducto{
+  text-decoration: none;
+  color: inherit;
+}
+
+.discountLabel {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  margin-bottom: 0.2em;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espacio entre el precio tachado y el precio con descuento */
+}
+
+.carritoItemPriceOriginal {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.carritoItemPriceDiscount {
+  color: #e63946;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.carritoItemPriceVerde {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.carritoItemDiscount {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offerTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  font-size: 12px;
+}

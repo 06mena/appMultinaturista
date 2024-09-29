@@ -1,0 +1,90 @@
+.tituloCompValor{
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: #0B513B;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.valoresContainer {
+  text-align: center;
+  padding: 40px;
+}
+
+.valoresGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.valorItem {
+  text-align: center;
+  max-width: 200px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.tituloValor {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.textoValor {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .valoresGrid {
+    gap: 20px; /* Reducimos el espacio entre los elementos */
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tituloValor {
+    font-size: 1.1em;
+  }
+
+  .textoValor {
+    font-size: 0.9em;
+  }
+}
+
+/* Para pantallas muy pequeñas, como móviles */
+@media (max-width: 480px) {
+  .valoresGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valorItem {
+    max-width: 100%;
+  }
+
+  .img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tituloCompValor{
+    font-size: 1.5rem;
+  }
+  .tituloValor {
+    font-size: 1.2rem;
+  }
+
+  .textoValor {
+    font-size: 1rem;
+  }
+}

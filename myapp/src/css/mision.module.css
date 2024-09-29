@@ -1,0 +1,71 @@
+.missionWrapper {
+  position: relative; /* Para permitir el uso de position: absolute en los hijos */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  background-color: #d8f0d5;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.textSection {
+  width: 100%;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.tituloMisionVision {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #2b5d34;
+  margin-bottom: 20px;
+}
+
+.textoMisionVision {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #3a6b44;
+}
+
+.decorativeIcon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90px;
+  opacity: 0.6; /* Para que no distraiga demasiado */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 769px) {
+  .missionWrapper {
+    flex-direction: column; /* Coloca los textos uno debajo del otro */
+    padding: 15px;
+  }
+
+  .textSection {
+    width: 100%; /* Asegura que los textos ocupen todo el ancho disponible */
+    margin-bottom: 20px; /* Añade espacio entre las secciones */
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .tituloMisionVision {
+    font-size: 1.5rem;
+  }
+
+  .textoMisionVision {
+    font-size: 1rem;
+  }
+
+  .decorativeIcon {
+    max-width: 100px; /* Ajusta el tamaño del icono en pantallas pequeñas */
+    top: auto; /* Quita la alineación vertical */
+    bottom: 0; /* Coloca el icono cerca del borde inferior */
+    right: 0; /* Un pequeño margen derecho */
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,132 @@
+/* Estilos generales del footer */
+.footerContainer {
+  background-color: #85CA83;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.linkDecoration{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerSection {
+  flex: 1;
+  margin: 10px;
+}
+
+.footerLogo {
+  width: 220px;
+  max-width: 100%;
+}
+
+.footerInfo ul, .footerCategories ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerInfo ul li, .footerCategories ul li {
+  margin-bottom: 10px;
+}
+
+.footerInfo ul li a, .footerCategories ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerInfo ul li a:hover, .footerCategories ul li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces */
+}
+
+.footerContact p {
+  margin: 5px 0;
+}
+
+.whatsappLink {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+.whatsappLink:hover {
+  color: black; /* Cambia el color al pasar el mouse, opcional */
+}
+/* Media queries para responsive */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerLogo {
+    width: 140px;
+  }
+
+  .footerInfo ul li, .footerCategories ul li {
+    margin-bottom: 5px;
+  }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footerContent {
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan si no caben en una fila */
+    justify-content: space-between;
+  }
+
+  .footerSection {
+    flex: 1 45%;
+    margin: 10px;
+  }
+
+  .footerLogo {
+    width: 140px;
+  }
+
+  .footerInfo ul li, .footerCategories ul li {
+    margin-bottom: 8px;
+  }
+
+  .footerContact p {
+    font-size: 14px;
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .footerContent {
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footerSection {
+    flex: 1;
+  }
+
+  .footerLogo {
+    width: 180px;
+  }
+
+  .footerInfo ul li, .footerCategories ul li {
+    margin-bottom: 10px;
+  }
+
+  .footerContact p {
+    font-size: 16px;
+  }
+}

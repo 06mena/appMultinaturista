@@ -1,0 +1,317 @@
+.carritoContainer {
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.carritoTitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.carritoEmpty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.carritoContenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Sección de carrito */
+.carritoColumnWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carritoColumn {
+  flex-basis: 65%;
+}
+
+.carritoHeader {
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #85CA83;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.headerActions {
+  flex-basis: 13%;
+  text-align: center;
+}
+
+.headerName, .headerPrice, .headerQuantity, .headerSubtotal {
+  flex-basis: 40%;
+  text-align: center;
+  padding: 10px;
+}
+
+.carritoList {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+.carritoItem {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.cancelIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.carritoItemName, .carritoItemPrice, .carritoItemQuantity, .carritoItemSubtotal {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.carritoItemQuantity {
+  max-width: 80px;
+  height: 35px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.carritoItemQuantity:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.carritoResumenWrapper {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carritoResumen {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.carritoResumen h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carritoResumen p {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.carritoResumen .carritoPagar {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(214, 214, 32);
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .carritoContenedor {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px; /* Asegura que hay espacio suficiente debajo del título */
+  }
+
+  .carritoColumnWrapper {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .carritoColumn {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .carritoResumenWrapper {
+    width: 100%;
+    order: 2;
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .carritoTtem {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .carritoItemName, .carritoItemPrice {
+    font-size: 0.9rem;
+  }
+
+  .carritoPagar {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .carritoContenedor {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px; /* Asegura que hay espacio suficiente debajo del título */
+  }
+
+  .carritoColumnWrapper {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  .carritoColumn {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .cancelIcon{
+    width: 15px;
+    height: 15px;
+  }
+
+  .headerName, .headerPrice, .headerQuantity, .headerSubtotal {
+    font-size: 14px;
+  }
+
+  .carritoResumenWrapper {
+    width: 100%;
+    order: 2;
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  .carritoHeader{
+    width: 100%;
+  }
+  .carritoItem {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .carritoItemName, .carritoItemPrice {
+    font-size: 0.9rem;
+  }
+
+  .carritoPagar {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carritoContenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Asegura que hay espacio suficiente debajo del título */
+  }
+
+  .carritoColumnWrapper {
+    margin-bottom: 20px;
+  }
+
+  .carritoColumn {
+    flex-basis: 65%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .carritoResumenWrapper {
+    flex-basis: 43%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .carritoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #28a745;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .carritoItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+
+  .headerName, .headerPrice, .headerActions,
+  .carritoItemName, .carritoItemPrice {
+    font-size: 1rem;
+  }
+
+  .carritoItemRemove {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .carritoPagar {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+  .carritoContenedor {
+    padding: 20px 40px;
+  }
+
+  .carritoColumn {
+    flex-basis: 65%;
+    margin-right: 20px;
+  }
+
+  .carritoResumenWrapper {
+    flex-basis: 35%;
+  }
+}

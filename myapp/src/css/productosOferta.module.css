@@ -1,0 +1,265 @@
+.ofertaContainer {
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 100%;
+}
+
+.productRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan a otra línea */
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+  width: calc(100% - 20px); /* Espacio lateral en la pantalla */
+  padding: 0 40px; /* Espacio interior del contenedor */
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.tituloRelacionado {
+  display: flex;
+  color: #0B513B;
+  justify-content: center;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 18px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  /* Tamaño de fuente para pantallas grandes */
+}
+
+.cajaOrdenar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.cajaPaginacion{
+  margin-bottom: 10px;
+}
+
+/* Tarjeta de producto */
+.cardProducto {
+  position: relative;
+  flex-grow: 1; /* Permite que las tarjetas crezcan */
+  flex-shrink: 0; /* Evita que las tarjetas se encojan */
+  flex-basis: 250px; /* Tamaño base de las tarjetas */
+  max-width: 300px; /* Máximo ancho de las tarjetas */
+  min-width: 250px; /* Ancho mínimo */
+  min-height: 400px; /* Asegura que todas las tarjetas tengan al menos esta altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Escala en hover */
+.cardProducto:hover {
+  transform: scale(1.03);
+}
+
+.offerTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+  /* Ajustar altura de la imagen */
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Espacio entre el precio original y el precio con descuento */
+}
+
+.cardPriceOriginal {
+  text-decoration: line-through;
+  color: #999;
+  /* Color más claro para el precio original */
+  font-size: 14px;
+  margin-right: 10px;
+  /* Tamaño más pequeño */
+}
+
+.cardPrecio {
+  color: #dc3545;
+  /* Color rojo para el precio con descuento */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cardPrecioVerde {
+  font-weight: bold;
+  color: #28a745; /* Color verde para el precio sin descuento */
+}
+
+.cardBody {
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Estilos del botón */
+.botonOferta {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.botonOferta:first-of-type {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.botonOferta:first-of-type:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .productRow {
+    flex-direction: column; /* Para pantallas más pequeñas, cambia a disposición vertical */
+    align-items: center;
+  }
+
+  .tituloRelacionado{
+    font-size: 36px;
+  }
+
+  .cardImg {
+    margin-top: 10px;
+    height: 160px;
+    object-fit: contain;
+  }
+
+  .priceContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cardPriceOriginal {
+    font-size: 18px;
+  }
+  
+  .cardPrecio {
+    font-size: 20px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+
+  .botonOferta {
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+
+  .cardProducto {
+    min-height: 350px; /* Ajustar la altura mínima en pantallas pequeñas */
+  }
+}
+
+/* Responsividad para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .cardProducto {
+    min-height: 400px;
+    max-width: 100%;
+  }
+
+  .productRow {
+    flex-direction: column; /* Para pantallas más pequeñas, cambia a disposición vertical */
+    align-items: center;
+    width: 100%;
+  }
+
+  .ofertaContainer {
+    padding: 1rem;
+  }
+
+  .tituloRelacionado {
+    font-size: 1.8rem;
+  }
+
+  .cardProducto {
+    padding: 0.5rem;
+  }
+
+  .cardImg {
+    margin-top: 15px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .priceContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cardPriceOriginal {
+    font-size: 18px;
+  }
+  
+  .cardPrecio {
+    font-size: 20px;
+  }
+
+  .buttonContainer {
+    margin-bottom: 15px;
+  }
+
+  .botonOferta {
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+}

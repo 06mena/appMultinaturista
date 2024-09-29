@@ -1,0 +1,256 @@
+/* Contenedor principal en dos columnas */
+.detalleProductoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 10px;
+  margin: 0 10px;
+}
+
+/* Columna de la imagen */
+.columnaImagen {
+  position: relative;
+  flex: 1;
+  max-width: 50%; /* Limita el tamaño de la columna de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen del producto */
+.imgProducto {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Columna de información */
+.columnaInfo {
+  width: 40%;
+  margin-right: 40px;
+  margin-top: 55px;
+  flex: 1;
+  padding-left: 20px;
+  max-width: 500px; /* Limita el ancho máximo */
+  margin-right: auto;
+}
+
+/* Título del producto */
+.productTitle {
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: bold;
+  font-weight: 500;
+  color: #85CA83;
+  margin-bottom: 20px;
+}
+
+.precioContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.descuentoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.cuadroDescuento {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  background-color: #ff4d4d; /* Color de fondo para el cuadro de descuento */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+.precioDescuento {
+  color: #ff4d4d; /* Color para el precio con descuento */
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.precioOriginal {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 18px;
+}
+
+
+/* Precio del producto */
+.precio {
+  font-size: 30px;
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+.categoria{
+  font-size: 18px;
+}
+/* Selector de cantidad y botón de añadir al carrito */
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ratingContainer {
+  margin-top: 10px;
+}
+
+
+/* Input de cantidad */
+.quantityInput {
+  max-width: 100px;
+  text-align: center;
+  height: 40px;
+}
+
+/* Botón para añadir al carrito */
+.addCartBtn {
+  width: 100%;
+  height: 40px;
+  background-color: #85CA83;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.addCartBtn:hover {
+  background-color: #2ac725;
+}
+
+.ratingContainer{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; 
+}
+
+.ratingText {
+  margin-left: 8px; 
+  font-size: 17px; 
+  color: #878686; 
+}
+
+.productosRelacionados{
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+/* Diseño responsive */
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 992px) {
+  .columnaImagen {
+    max-width: 45%; /* Ajusta el tamaño de la columna en tablets */
+  }
+
+  .columnaInfo {
+    padding-left: 15px;
+  }
+
+  .productTitle {
+    font-size: 26px;
+  }
+
+  .precio {
+    font-size: 24px;
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .detalleProductoContainer {
+    flex-direction: row; 
+  }
+
+  .columnaImagen, .columnaInfo {
+    max-width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .imgProducto {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .productTitle {
+    font-size: 22px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+  }
+
+ .containerButton{
+  margin-right: 10px;
+ }
+}
+
+/* Para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .detalleProductoContainer {
+    margin-left: 15px;
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .columnaInfo{
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .imgProducto {
+    margin: 30px 0 0 ;
+    max-width: 70%;
+    height: auto;
+  }
+
+  .productTitle {
+    font-size: 30px;
+  }
+
+  .precio {
+    font-size: 22px;
+  }
+
+  .descripcion {
+    font-size: 18px;
+  }
+
+  .categoria{
+    font-size: 16px;
+  }
+}

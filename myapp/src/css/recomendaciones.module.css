@@ -1,0 +1,53 @@
+.recomendaciones {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linkDecoration {
+  text-decoration: none;
+  color: inherit; /* Para heredar el color del texto circundante */
+}
+
+/* Alinear el contenido al centro */
+.alignCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tituloOfertas{
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  text-decoration-line: none;
+  display: flex;
+  justify-content: center;
+  color: #0B513B;
+}
+
+/* Ajustes para pantallas medianas (tablets o dispositivos medianos) */
+@media (max-width: 768px) {
+  .recomendaciones {
+      padding: 20px;
+      margin-top: 30px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (smartphones) */
+@media (max-width: 480px) {
+  .recomendaciones {
+      padding: 10px;
+      margin-top: 20px;
+  }
+
+  .aling-center {
+      padding: 10px;
+  }
+}

@@ -1,0 +1,167 @@
+/* Contenedor principal del checkout */
+.checkoutContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tituloFinalizar {
+  margin-top: 10px;
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: #0B513B;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.subtitulosFinalizar{
+  color: #0B513B;
+}
+
+.checkoutContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Formulario de facturación */
+.billingForm {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formGroup select {
+  appearance: none; /* Elimina el estilo predeterminado del select */
+  background-color: #fff;
+}
+
+.formGroup select option {
+  padding: 10px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Resumen del pedido */
+.orderSummary {
+  height: 50%;
+  max-width: 400px; 
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f1f8e9;
+  box-sizing: border-box;
+}
+
+.orderSummary h3 {
+  margin-bottom: 20px;
+}
+
+.orderSummary table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.orderSummary table td {
+  padding: 10px 0;
+}
+
+.totalRow {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Opciones de pago */
+.paymentOptions {
+  margin-top: 20px;
+}
+
+.paymentOptions label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Términos y condiciones */
+.terms {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Botón de enviar */
+.submitBtn {
+  background-color: #fbc02d;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #f9a825;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .checkoutContent {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .orderSummary, .billingForm {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkoutContainer {
+    padding: 10px;
+  }
+
+  .billingForm,
+  .orderSummary {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .h2Title {
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 8px;
+  }
+
+  .submitBtn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

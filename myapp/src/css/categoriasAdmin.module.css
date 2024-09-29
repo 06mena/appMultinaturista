@@ -1,0 +1,67 @@
+.cajaCategorias {
+  width: 100%;
+  padding: 25px;
+}
+
+.cajaCategorias table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Nunito', sans-serif;
+}
+
+.cajaCategorias th, .cajaCategorias td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: start;
+
+}
+
+.cajaCategorias th {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cajaCategorias td {
+  background-color: #ffffff; /* Fondo blanco para las filas de productos */
+  color: #333333;
+  font-size: 20px;
+}
+
+.cajaCategorias tr:hover td {
+  background-color: #a4ff70ad; /* Fondo verde claro cuando se pasa el mouse sobre la fila */
+}
+
+.cajaCategorias button {
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* .cajaCategorias button:hover {
+  background-color: #9df376; /* Color más oscuro al pasar el mouse
+} */
+
+.cajaCategorias button:focus {
+  outline: none;
+}
+
+.cajaCategorias button:active {
+  background-color: #0d5330; /* Color aún más oscuro al hacer clic */
+}
+
+
+.sinResultados{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

@@ -1,0 +1,367 @@
+/* Estilos generales para la tabla */
+.table-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+
+
+/* Estilo para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+
+/* Encabezados de la tabla */
+/* Encabezados de la tabla */
+th {
+  background-color: #f4f4f4;
+  padding: 12px;
+  text-align: center;
+  /* Centra los títulos de las columnas */
+  border-bottom: 2px solid #ddd;
+  font-size: 20px;
+  color: #333;
+  position: -webkit-sticky;
+  /* Para compatibilidad con Safari */
+  position: sticky;
+  /* Mantiene el encabezado en su posición cuando se desplaza */
+  top: 0;
+  /* Fija el encabezado en la parte superior */
+  z-index: 1;
+  /* Asegura que el encabezado esté sobre otras filas */
+}
+
+/* .tr{
+  background-color: limegreen;
+} */
+
+/* Celdas de la tabla */
+/* Celdas de la tabla */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  /* Agrega borde derecho entre columnas */
+  text-align: center;
+  /* Centra el contenido de las celdas */
+  font-size: 19px;
+  color: #666;
+}
+
+/* Elimina el borde derecho de la última columna para evitar doble borde */
+td:last-child {
+  border-right: none;
+}
+
+
+/* Fila alterna para mayor legibilidad */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilo específico para las celdas de nombre */
+.nombre {
+  text-align: left;
+  /* Alinea a la izquierda para la celda de nombre */
+}
+
+
+/* Botones en la tabla */
+.botonEditar {
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  padding: 7px;
+}
+
+.botonEditar:hover {
+  color: #0056b3;
+}
+
+/* Mensaje de no resultados */
+.sinResultados {
+  text-align: center;
+  padding: 20px;
+}
+
+.sinResultados img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.stock {
+  text-align: center;
+}
+
+/* Estilos para el overlay y modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 40%;
+  /* Se ha reducido el ancho del modal */
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 80%;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* .modal button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.modal button:hover {
+  opacity: 0.8;
+} */
+
+
+
+
+.input,
+.textarea,
+.select {
+  padding: 0.5rem;
+  /* Espaciado relativo */
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 0.5rem rgba(0, 123, 255, 0.5);
+}
+
+/* ESTE ES EL ESTILO DE LOS BOTONES DE LAS OFERTAS  */
+.switchContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.switchLabel {
+  font-size: 1rem;
+  color: #333;
+  padding: 5px;
+}
+
+.switchButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switchButton.active {
+  background-color: #80b155;
+  color: white;
+  border-color: #80b155;
+}
+
+.switchButton.inactive {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+
+/* Alert.module.css */
+.alert {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+}
+
+.alertWarning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alertSuccess {
+  color: #228504;
+  background-color: #d1ffc5;
+  border-color: #cdffba;
+
+}
+
+
+
+
+
+
+
+/* Estilos para el botón de eliminar imagen */
+/* .btnDelete {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.btnDelete:hover {
+  background-color: #e53935; */
+
+
+/* Botones en el modal */
+.btnSubmit,
+.btnClose {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 15px 10px;
+}
+
+.btnSubmit {
+  background-color: #28a745;
+  color: white;
+}
+
+.btnSubmit:hover {
+  background-color: #218838;
+}
+
+.btnClose {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btnClose:hover {
+  background-color: #c82333;
+}
+
+
+/* ESTADOS */
+
+.estadoCell {
+  width: 150px;
+  /* Ajusta este valor al tamaño que desees */
+  text-align: center;
+  /* Opcional: Centrar el texto */
+}
+
+
+.EstadoActivo {
+  background-color: #28a745;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.EstadoInactivo {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.EstadoAgotado {
+  background-color: #f7da37;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.EstadoCasiAgotado {
+  background-color: #fd7e14;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.SinEstado {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+
+
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 932px) {
+  /* .tipsList {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .tipCard {
+      max-width: 90%;
+  } */
+
+  .modal {
+    width: 95%;
+    max-width: 70%;
+    /* Ajuste de tamaño para pantallas pequeñas */
+  }
+}
